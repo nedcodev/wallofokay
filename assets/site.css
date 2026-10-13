@@ -104,8 +104,8 @@ button, input { font: inherit; color: inherit; }
 .new { white-space: nowrap; display: inline-block; font-size: 11px; font-weight: 700; background: var(--fg); color: var(--bg); padding: 1px 6px; border-radius: 4px; margin-left: 6px; vertical-align: 1px; }
 
 /* ===== Home: Ask Hupp ===== */
-.intro { text-align: center; max-width: 720px; margin: 28px auto 22px; padding: 0 24px; }
-.intro h1 { font-size: clamp(36px, 6vw, 60px); letter-spacing: -.035em; line-height: 1.02; margin: 0 0 12px; }
+.intro { text-align: center; max-width: 720px; margin: 88px auto 22px; padding: 0 24px; }
+.intro h2 { font-size: clamp(30px, 4.5vw, 44px); letter-spacing: -.03em; line-height: 1.05; margin: 0 0 12px; }
 .intro p { color: var(--muted); font-size: 18px; margin: 0; }
 
 .ask { max-width: 620px; margin: 0 auto; padding: 0 16px; scroll-margin-top: 16px; }
@@ -245,6 +245,58 @@ button, input { font: inherit; color: inherit; }
 .lost .hupp { width: 200px; height: auto; margin: 0 auto 8px; }
 .lost h1 { font-size: 36px; letter-spacing: -.02em; line-height: 1.1; margin: 0 0 10px; }
 .lost p { color: var(--muted); margin: 0 0 22px; }
+
+/* ===== Home: a note from Hupp ===== */
+.note { max-width: 760px; margin: 0 auto; padding: 96px 16px 0; }
+.note-card { position: relative; background: var(--bg); border-top: 3px solid var(--fg); border-radius: 22px; padding: 34px 38px 30px; }
+.note-card > .hupp.sit { position: absolute; left: 30px; bottom: 100%; width: 132px; height: auto; }
+.note-label { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+.note h1 { font-size: clamp(32px, 5vw, 50px); letter-spacing: -.035em; line-height: 1.05; margin: 0 0 16px; }
+.note p { font-size: 19px; margin: 0 0 12px; max-width: 600px; }
+.note .sign { font-weight: 800; font-size: 18px; margin: 18px 0 22px; }
+.note .sign::before { content: "— "; }
+.note-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+
+/* ===== Home: Stuck right now? ===== */
+.stuck { max-width: 620px; margin: 48px auto 0; padding: 0 16px; scroll-margin-top: 16px; }
+.stuck-card { background: var(--hl); border-radius: 22px; padding: 30px 28px; }
+.st { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.st .q { font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1.15; margin: 0; outline: none; }
+.st .sub { color: var(--muted); font-size: 16px; margin: 0; max-width: 460px; }
+.st .hupp.md { width: 130px; height: auto; }
+.stuck-form { display: flex; gap: 8px; width: 100%; max-width: 480px; }
+.stuck-form input { flex: 1; min-width: 0; border: 1.6px solid var(--fg); border-radius: 999px; padding: 12px 16px; background: var(--bg); }
+.stuck-form input::placeholder { color: var(--muted); }
+.stuck-form .btn { white-space: nowrap; }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.chip { border: 1.4px solid var(--fg); background: var(--bg); border-radius: 999px; padding: 6px 12px; font-size: 14px; cursor: pointer; }
+.chip:hover { background: var(--soft); }
+.tiny { background: var(--bg); border-radius: 14px; padding: 18px 20px; font-size: 22px; font-weight: 800; letter-spacing: -.01em; line-height: 1.25; width: 100%; max-width: 460px; }
+.row-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.btn.ghost { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.btn.ghost:hover { background: rgba(17,17,17,.06); }
+.clock { font-size: 64px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; line-height: 1; }
+.bricks.wide i { width: 30px; height: 13px; }
+.hopper { display: flex; align-items: flex-end; gap: 4px; }
+
+/* ===== Home: the story ===== */
+.story { max-width: 1132px; width: calc(100% - 48px); margin: 64px auto 0; padding: 32px; background: var(--bg); border-radius: 22px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; align-items: center; }
+.story > * { min-width: 0; }
+.story .walls { width: 100%; height: auto; color: var(--fg); display: block; }
+.story h2 { font-size: clamp(28px, 4vw, 40px); letter-spacing: -.03em; line-height: 1.05; margin: 0 0 14px; }
+.story p { font-size: 17px; margin: 0 0 12px; }
+.story .cite { font-size: 14px; color: var(--muted); margin-top: 16px; }
+@media (max-width: 860px) { .story { grid-template-columns: 1fr; padding: 24px 20px; width: calc(100% - 32px); } }
+@media (max-width: 560px) {
+  .note { padding-top: 84px; }
+  .note-card { padding: 26px 22px 24px; }
+  .note-card > .hupp.sit { width: 112px; left: 18px; }
+  .note p { font-size: 17px; }
+  .stuck-card { padding: 26px 18px; }
+  .stuck-form { flex-direction: column; }
+  .st .q { font-size: 24px; }
+  .tiny { font-size: 20px; }
+}
 
 /* Small notice for links that aren't connected yet */
 .notice { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 10px 16px; border-radius: 12px; font-size: 14px; z-index: 60; max-width: calc(100% - 32px); }
