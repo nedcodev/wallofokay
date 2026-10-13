@@ -14,7 +14,7 @@ A plain static site (HTML, CSS and a little JavaScript). There is no build step 
 | `full-tide.html` | Full Tide ($24) |
 | `404.html` | "This page fell off the wall" |
 
-Shared files live in `assets/`: `site.css` (all styles), `site.js` (Buy buttons, Starter form, the "hup!" hop), `ask.js` (the Ask Hupp flow), `stuck.js` (the "Stuck right now?" helper; edit its list to change the tiny steps), plus the icons and share image.
+Shared files live in `assets/`: `site.css` (all styles), `site.js` (Buy buttons, Starter form, the "hup!" hop), `ask.js` (the Ask Hupp flow), `stuck.js` (the "Stuck right now?" helper; edit its list to change the tiny steps), plus the icons and share image. The logo files (long, square, app icon and Notion banner) are in `assets/logo/`.
 
 ## Connecting your accounts
 
