@@ -22,7 +22,7 @@ Everything is in **one file: `assets/config.js`**. Paste your links between the 
 
 - **Gumroad**: each product's page link (for example `https://wallofokay.gumroad.com/l/lowtide`). Buy buttons then open Gumroad's checkout on top of the page.
 - **Kit**: the form number from your Kit form's embed code. The free Starter form then adds people to that form.
-- **Etsy** and **Instagram**: full links. They show up in the footer once set.
+- **Etsy**, **Instagram** and **Threads**: full links. They show up in the footer once set.
 
 Until a link is added, the button shows a small "not connected yet" message instead of breaking.
 

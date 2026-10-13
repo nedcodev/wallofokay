@@ -12,7 +12,7 @@
   action="https://app.kit.com/forms/1234567/subscriptions".
   Paste only the number (1234567) below.
 
-  ETSY and INSTAGRAM
+  ETSY, INSTAGRAM and THREADS
   Full links to your shop and profile. They appear in the footer.
   If a link is empty, it is simply hidden.
 */
@@ -24,5 +24,6 @@ window.WALL_OF_OKAY = {
   },
   kitFormId: "",
   etsy: "",
-  instagram: ""
+  instagram: "https://www.instagram.com/wallofokay",
+  threads: "https://www.threads.com/@wallofokay"
 };
